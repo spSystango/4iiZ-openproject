@@ -144,4 +144,4 @@ acme.json
 **/config/locales/en.seeders.yml
 
 
-/config/cable.yml
+config/cable.yml
