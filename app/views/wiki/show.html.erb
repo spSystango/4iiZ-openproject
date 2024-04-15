@@ -44,7 +44,7 @@ See COPYRIGHT and LICENSE files for more details.
     <% if @page && User.current.allowed_in_project?(:edit_wiki_pages, @project) %>
       <li class="toolbar-item">
           <%= link_to({controller: '/wiki', action: 'new_child', project_id: @project.identifier, id: @page},
-              { class: 'button -primary',
+              { class: 'button -alt-highlight',
                 aria: {label: t('wiki.index.no_results_content_text')},
                 title: t('wiki.index.no_results_content_text')}) do %>
             <%= op_icon('button--icon icon-add') %>
@@ -79,6 +79,9 @@ See COPYRIGHT and LICENSE files for more details.
       <%= op_icon('button--dropdown-indicator') %>
     </a>
     <ul style="display:none;" class="menu-drop-down-container">
+    <%= li_unless_nil(link_to(t(:button_copy),
+    {action: 'new_child', id: @page, project_id: @project.identifier, custom_text: "copy"},
+    class: 'icon-context icon-copy')) %>
       <% if @editable %>
         <%= li_unless_nil(link_to_if_authorized(t(:button_lock), {action: 'protect', id: @page, protected: 1}, method: :post, class: 'icon-context icon-locked')) if !@page.protected? %>
         <%= li_unless_nil(link_to_if_authorized(t(:button_unlock), {action: 'protect', id: @page, protected: 0}, method: :post, class: 'icon-context icon-unlocked')) if @page.protected? %>

@@ -142,3 +142,6 @@ acme.json
 
 # Generated seeders crowdin source file
 **/config/locales/en.seeders.yml
+
+
+/config/cable.yml
