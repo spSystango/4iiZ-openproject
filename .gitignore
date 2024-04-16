@@ -143,47 +143,47 @@ acme.json
 # Generated seeders crowdin source file
 **/config/locales/en.seeders.yml
 
-# Added host conflict related files:
- /.env.example
- /.github/workflows/docker.yml
- /app/helpers/frontend_asset_helper.rb
- /app/validators/secure_context_uri_validator.rb
- /config/cable.yml
- /config/constants/settings/definition.rb
- /docker-compose.override.example.yml
- /docs/enterprise-guide/support/script/op-support-data.sh
- /extra/Apache/OpenProjectAuthentication.pm
- /frontend/cli_to_rails_proxy.js
- /frontend/package.json
- /frontend/src/vendor/ckeditor/ckeditor.js
- /frontend/src/vendor/ckeditor/ckeditor.js.map
- /modules/auth_saml/spec/fixtures/saml_response.xml
- /modules/auth_saml/spec/requests/saml_provider_callback_spec.rb
- /modules/bim/spec/features/bcf/api_authorization_spec.rb
- /modules/bim/spec/representers/bcf/api/v2_1/auth/single_representer_rendering_spec.rb
- /modules/bim/spec/requests/api/bcf/v2_1/auth_api_spec.rb
- /modules/calendar/spec/services/create_ical_service_spec.rb
- /modules/github_integration/frontend/module/git-actions/git-actions.service.spec.ts
- /modules/ldap_groups/lib/tasks/ldap_groups.rake
- /modules/ldap_groups/spec/features/filter_administration_spec.rb
- /modules/openid_connect/spec/requests/openid_connect_spec_helpers.rb
- /modules/storages/spec/contracts/storages/storages/shared_contract_examples.rb
- /packaging/addons/repositories/conf/vhost/repoman_svn_wrapper.conf
- /script/anonymize-sql-dump.sh
- /spec/controllers/enterprises_controller_spec.rb
- /spec/controllers/repositories_controller_spec.rb
- /spec/features/admin/enterprise/token_domain_spec.rb
- /spec/features/admin/oauth/oauth_applications_management_spec.rb
- /spec/features/ldap_auth_sources/crud_spec.rb
- /spec/features/repositories/checkout_instructions_spec.rb
- /spec/helpers/frontend_asset_helper_spec.rb
- /spec/lib/open_project/configuration_spec.rb
- /spec/lib/open_project/text_formatting/markdown/images_spec.rb
- /spec/lib/open_project/text_formatting/markdown/setting_variable_spec.rb
- /spec/models/repository/git_spec.rb
- /spec/seeders/env_data/ldap_seeder_spec.rb
- /spec/support/browsers/chrome.rb
- /spec/support/capybara.rb
- /spec/support/webmock.rb
- /spec/validator/secure_context_uri_validator_spec.rb
- /vendor/assets/javascripts/openapi-explorer.min.js
+# Additional files to ignore
+.env.example
+.github/workflows/docker.yml
+app/helpers/frontend_asset_helper.rb
+app/validators/secure_context_uri_validator.rb
+config/cable.yml
+config/constants/settings/definition.rb
+docker-compose.override.example.yml
+docs/enterprise-guide/support/script/op-support-data.sh
+extra/Apache/OpenProjectAuthentication.pm
+frontend/cli_to_rails_proxy.js
+frontend/package.json
+frontend/src/vendor/ckeditor/ckeditor.js
+frontend/src/vendor/ckeditor/ckeditor.js.map
+modules/auth_saml/spec/fixtures/saml_response.xml
+modules/auth_saml/spec/requests/saml_provider_callback_spec.rb
+modules/bim/spec/features/bcf/api_authorization_spec.rb
+modules/bim/spec/representers/bcf/api/v2_1/auth/single_representer_rendering_spec.rb
+modules/bim/spec/requests/api/bcf/v2_1/auth_api_spec.rb
+modules/calendar/spec/services/create_ical_service_spec.rb
+modules/github_integration/frontend/module/git-actions/git-actions.service.spec.ts
+modules/ldap_groups/lib/tasks/ldap_groups.rake
+modules/ldap_groups/spec/features/filter_administration_spec.rb
+modules/openid_connect/spec/requests/openid_connect_spec_helpers.rb
+modules/storages/spec/contracts/storages/storages/shared_contract_examples.rb
+packaging/addons/repositories/conf/vhost/repoman_svn_wrapper.conf
+script/anonymize-sql-dump.sh
+spec/controllers/enterprises_controller_spec.rb
+spec/controllers/repositories_controller_spec.rb
+spec/features/admin/enterprise/token_domain_spec.rb
+spec/features/admin/oauth/oauth_applications_management_spec.rb
+spec/features/ldap_auth_sources/crud_spec.rb
+spec/features/repositories/checkout_instructions_spec.rb
+spec/helpers/frontend_asset_helper_spec.rb
+spec/lib/open_project/configuration_spec.rb
+spec/lib/open_project/text_formatting/markdown/images_spec.rb
+spec/lib/open_project/text_formatting/markdown/setting_variable_spec.rb
+spec/models/repository/git_spec.rb
+spec/seeders/env_data/ldap_seeder_spec.rb
+spec/support/browsers/chrome.rb
+spec/support/capybara.rb
+spec/support/webmock.rb
+spec/validator/secure_context_uri_validator_spec.rb
+vendor/assets/javascripts/openapi-explorer.min.js
